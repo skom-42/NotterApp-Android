@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Our recyclerview, which shows a scrolling list of items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_available"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/empty_view_illustration"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_gravity="center"
+        android:layout_marginTop="-75dp"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
+
